@@ -1,4 +1,4 @@
-﻿# Bundle Folder Helper
+﻿# Bundle Helper
 
 ###Summary
 In combo with WE this prebuild routine will make sure all of your files are bundled.
@@ -10,7 +10,7 @@ In combo with WE this prebuild routine will make sure all of your files are bund
 `npm install bundlehelper`
 
 ###How to run
-1. type `bundlehelper` with a `-root <directory>` and `-bundleLoc <folder where .bundles live>`.
+* type `bundlehelper` with a `-root <directory of your project>` and `-bundleLoc <folder where .bundles live>`.
 
 #####note: root search will recursively search through all folders.
 
@@ -21,7 +21,8 @@ In combo with WE this prebuild routine will make sure all of your files are bund
 * `-autoSync (default:false) <will automatically update your bundles with missing files>`
 * `-split (default:\r\n) <how the bundle files should be split by line>`
 
-#####visual studio example: bundlehelper -root "$(ProjectDir)\" -bundleLoc CDNBundles\ -autoSync
-#####node example: bundlehelper -root "c:\myfolder\myproject\\" -bundleLoc CDNBundles\ -dialog
+###Examples
+* visual studio: `bundlehelper -root "$(ProjectDir)\" -bundleLoc CDNBundles\ -autoSync`
+* node: `bundlehelper -root "c:\myfolder\myproject\\" -bundleLoc CDNBundles\ -dialog`
 
 #####note for the above examples: you need to escape the trailing '\' in a path
