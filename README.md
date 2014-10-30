@@ -5,9 +5,9 @@ In combo with WE this prebuild routine will make sure all of your files are bund
 
 ###How to install it
 
-`npm install git://github.com/bstaley/bundlehelper.git `
+`npm install git://github.com/bstaley/bundlehelper.git -g`
 ######--or--
-`npm install bundlehelper`
+`npm install bundlehelper -g`
 
 ###How to run
 * type `bundlehelper` with a `-root <directory of your project>` and `-bundleLoc <folder where .bundles live>`.
