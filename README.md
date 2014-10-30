@@ -1,7 +1,7 @@
 ﻿# Bundle Folder Helper
 
 ###Summary
-In combo with WE this prebuild rutine will make sure all of your files are bundled.
+In combo with WE this prebuild routine will make sure all of your files are bundled.
 
 ###How to install it
 
