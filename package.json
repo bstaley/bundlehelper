@@ -1,0 +1,31 @@
+{
+    "name": "bundlehelper",
+    "version": "0.1.0",
+    "description": "In combo with WE this prebuild rutine will make sure all of your files are bundled.",
+    "main": "bundlehelper.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "javascript",
+        "Web",
+        "Essentials",
+        "Web Essentials",
+        "bundling",
+        "bundles",
+        "folders",
+        "folder"
+    ],
+    "author": {
+        "name": "bstaley",
+        "email": "bstaley0@gmail.com"
+    },
+    "license": [
+        {
+            "type": "Apache License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0"
+        }
+    ],
+    "preferGlobal": "true",
+    "bin": { "bundlehelper": "./bin/bundlehelper.js" }
+}
