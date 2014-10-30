@@ -3,6 +3,21 @@
 ###Summary
 In combo with WE this prebuild routine will make sure all of your files are bundled.
 
+###Bundle file configuration
+
+```
+<bundle ... >
+  <settings>
+   ...
+    <sourceFolder>css/custom</sourceFolder>
+  </settings>
+</bundle>
+```
+this tells the pre-build action where all of your files for your bundle live. In this case my css files live in '(Project Directory)/css/custom/'. Each bundle that you want to auto sync you will need to add this line. Any bundle with out this line will be ignored.
+
+#####note: 'soureFolder' above does not need beginning and trailing slashes. 
+
+
 ###How to install it
 
 `npm install git://github.com/bstaley/bundlehelper.git -g`
