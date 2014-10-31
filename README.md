@@ -5,6 +5,7 @@ In combo with WE this prebuild routine will make sure all of your files are bund
 
 ###Bundle file configuration
 
+######note: these files are your .bundle files
 ```
 <bundle ... >
   <settings>
@@ -15,7 +16,7 @@ In combo with WE this prebuild routine will make sure all of your files are bund
 ```
 this tells the pre-build action where all of your files for your bundle live. In this case my css files live in '(Project Directory)/css/custom/'. Each bundle that you want to auto sync you will need to add this line. Any bundle with out this line will be ignored.
 
-#####note: 'soureFolder' above does not need beginning and trailing slashes. 
+######note: 'soureFolder' above does not need beginning and trailing slashes. 
 
 
 ###How to install it
@@ -27,7 +28,7 @@ this tells the pre-build action where all of your files for your bundle live. In
 ###How to run
 * type `bundlehelper` with a `-root <directory of your project>` and `-bundleLoc <folder where .bundles live>`.
 
-#####note: root search will recursively search through all folders.
+######note: root search will recursively search through all folders.
 
 ###Acceptable commands
 * `-root <directory where your project lives $(ProjectDir)>`
@@ -40,4 +41,4 @@ this tells the pre-build action where all of your files for your bundle live. In
 * visual studio: `bundlehelper -root "$(ProjectDir)\" -bundleLoc CDNBundles\ -autoSync`
 * node: `bundlehelper -root "c:\myfolder\myproject\\" -bundleLoc CDNBundles\ -dialog`
 
-#####note for the above examples: you need to escape the trailing '\' in a path
+######note for the above examples: you need to escape the trailing '\' in a path
