@@ -38,7 +38,7 @@ this tells the pre-build action where all of your files for your bundle live. In
 * `-split (default:\r\n) <how the bundle files should be split by line>`
 
 ###Examples
-* visual studio: `bundlehelper -root "$(ProjectDir)\" -bundleLoc CDNBundles\ -autoSync`
-* node: `bundlehelper -root "c:\myfolder\myproject\\" -bundleLoc CDNBundles\ -dialog`
+* visual studio pre/post build event: `bundlehelper -root "$(ProjectDir)\" -bundleLoc CDNBundles\ -autoSync`
+* node CLI: `bundlehelper -root "c:\myfolder\myproject\\" -bundleLoc CDNBundles\ -dialog`
 
 ######note for the above examples: you need to escape the trailing '\' in a path
