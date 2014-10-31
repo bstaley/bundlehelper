@@ -40,5 +40,25 @@ this tells the pre-build action where all of your files for your bundle live. In
 ###Examples
 * visual studio pre/post build event: `bundlehelper -root "$(ProjectDir)\" -bundleLoc CDNBundles\ -autoSync`
 * node CLI: `bundlehelper -root "c:\myfolder\myproject\\" -bundleLoc CDNBundles\ -dialog`
+* publish profile visual studio: 
+```
+<Project>
+  ...
+  <Target Name="BundleHelper">
+    <Exec Command="bundlehelper -root &quot;$(ProjectDir)\&quot; -bundleLoc CDNBundles\ -autoSync"/>
+  </Target>
+  <PropertyGroup>
+    <CopyAllFilesToSingleFolderForPackageDependsOn>
+      BundleHelper;
+      $(CopyAllFilesToSingleFolderForPackageDependsOn);
+    </CopyAllFilesToSingleFolderForPackageDependsOn>
+
+    <CopyAllFilesToSingleFolderForMsdeployDependsOn>
+      BundleHelper;
+      $(CopyAllFilesToSingleFolderForMsdeployDependsOn);
+    </CopyAllFilesToSingleFolderForMsdeployDependsOn>
+  </PropertyGroup>
+</Project>
+  ```
 
 ######note for the above examples: you need to escape the trailing '\' in a path
