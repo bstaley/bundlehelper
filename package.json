@@ -1,6 +1,6 @@
 {
     "name": "bundlehelper",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "In combo with WE this prebuild rutine will make sure all of your files are bundled.",
     "main": "bundlehelper.js",
     "scripts": {

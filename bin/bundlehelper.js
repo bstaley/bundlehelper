@@ -48,7 +48,7 @@ var dialog = require('../lib/dialog.js'),
 
 
 //Holds the switch statements and paths that are user entered.
-var userArguments = /*['-root', 'C:\\TFS\\FandI.Release\\Release\\v1.0\\v 1.0 Hotfix\\Src\\Web\\DMx.FANDI.Web\\', '-bundleLoc', 'CDNBundles\\', '-split','\r\n', '-dialog']*/process.argv.slice(2);
+var userArguments = process.argv.slice(2);
 //The location where the .bundle files live.
 var bundleLocation = '';
 //Used if you point to a directory, this will use recurrsion to find all bundle files.
@@ -109,7 +109,7 @@ if (!root || !bundleLocation) {
 dialog.logSomething('User Args:', userArguments);
 
 //get all the bundle files
-file.getFilesFromDir(root + bundleLocation);
+file.getFilesFromDir(root + bundleLocation, true);
 
 //store the names and data
 var fileNames = file.getFileNames();
