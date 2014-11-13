@@ -60,9 +60,4 @@ this tells the pre-build action where all of your files for your bundle live. In
   </PropertyGroup>
 </Project>
   ```
-
-<<<<<<< HEAD
 ######note for the above examples: you need to escape the trailing '\' in a path
-=======
-######note for the above examples: you need to escape the trailing '\' in a path
->>>>>>> origin/master
